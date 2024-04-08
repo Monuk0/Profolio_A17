@@ -1,0 +1,22 @@
+<section>
+    <div class="port--view">
+      <div class="port--frame">
+        <div class="port-header">
+          <app-header (tab_value)="receiveData($event)"></app-header>
+        </div>
+        <div class="content-section">
+          @if(tab_select != '_hello'){
+          <div class="sidebar-view">
+            <app-side-bar></app-side-bar>
+          </div>
+          }
+          <div class="router-view">
+            <router-outlet />
+          </div>
+        </div>
+        <div class="footer--view">
+          <app-footer></app-footer>
+        </div>
+      </div>
+    </div>
+  </section>

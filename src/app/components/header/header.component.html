@@ -1,0 +1,23 @@
+<header class="header--section">
+    <div class="header--menu">
+        <div class="username">
+            <ul>
+                <li >
+                    _Immoral
+                </li>
+            </ul>
+        </div>
+        <div class="menu--list">
+            <ul (click)="tab_select($event)">
+                <li [class]="tab_Active == '_hello'? 'selected' : ''">_hello</li> 
+                <li [class]="tab_Active == '_about_me'? 'selected' : ''">_about_me</li>
+                <li [class]="tab_Active == '_project'? 'selected' : ''">_project</li>
+            </ul>
+        </div>
+        <div class="contact--me">
+            <ul (click)="tab_select($event)">
+                <li  [class]="tab_Active == '_contact_me'? 'selected' : ''">_contact_me</li>
+            </ul>
+        </div>
+    </div>
+</header>

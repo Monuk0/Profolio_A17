@@ -1,0 +1,50 @@
+section {
+  .game--background {
+    width: 779.6px;
+    height: 742.27px;
+    // background: radial-gradient( hsla(166, 37%, 48%, 1) 0%, hsla(207, 95%, 8%, 1) 45%);
+    display: flex;
+    align-items: center;
+    .game--box {
+      display: flex;
+      align-items: center;
+      margin-left: 35px;
+      height: 475px;
+      width: 510px;
+      opacity: 0.2;
+      border: solid var(--black) 1px;
+      border-radius: 10px;
+      box-shadow: inset 0px 2px 2px var(--white);
+      background: hsla(178, 57%, 21%, 1);
+      background: linear-gradient(
+        153deg,
+        hsla(178, 57%, 21%, 1) 0%,
+        hsla(174, 56%, 26%, 1) 19%,
+        hsla(171, 55%, 30%, 1) 32%,
+        hsla(170, 55%, 33%, 1) 46%,
+        hsla(170, 55%, 31%, 1) 74%,
+        hsla(173, 56%, 27%, 1) 83%,
+        hsla(176, 57%, 24%, 1) 92%,
+        hsla(178, 57%, 21%, 1) 100%
+      );
+      .game--screen {
+        width: 238.69px;
+        height: 405.32px;
+        margin-left: 35px;
+        background: var(--game-screen);
+        border-radius: 10px;
+        box-shadow: inset 0px 2px 2px var(--black);
+        .snake--line {
+          width: 10px;
+          height: 153.61px;
+        //   background: linear-gradient(
+        //     90deg,
+        //     hsla(162, 66%, 56%, 1) 100%,
+        //     hsla(163, 67%, 76%, 1) 47%,
+        //     hsla(0, 0%, 100%, 1) 0%
+        //   );
+        }
+      }
+    }
+  }
+}

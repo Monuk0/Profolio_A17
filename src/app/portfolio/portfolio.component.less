@@ -1,0 +1,34 @@
+section {
+  .port--view {
+    height: 100vh;
+    width: 100%;
+    background: var(--background);
+    color: var(--white);
+    border: solid var(--triadic) 1px;
+    border-radius: 5px;
+    .port--frame {
+      display: flex;
+      flex-direction: column;
+      .port-header {
+        height: auto;
+      }
+      .content-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .sidebar-view {
+          width: 15%;
+        }
+        .router-view {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 88vh;
+        }
+      }
+      .footer--view {
+        height: auto;
+      }
+    }
+  }
+}
