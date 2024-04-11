@@ -4,6 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { SideBarComponent } from '../components/side-bar/side-bar.component';
 import { HomePageComponent } from '../pages/home-page/home-page.component';
 import { FooterComponent } from '../components/footer/footer.component';
+import { TaskBarComponent } from '../components/task-bar/task-bar.component';
+
 
 @Component({
   selector: 'app-portfolio',
@@ -14,6 +16,7 @@ import { FooterComponent } from '../components/footer/footer.component';
     HomePageComponent,
     RouterOutlet,
     FooterComponent,
+    TaskBarComponent
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.less',

@@ -1,1 +1,11 @@
-<p>project-page works!</p>
+<section>
+    <div class="project--div">
+      @for(item of card_List; track item.id )
+      {
+          <div class="card--details">
+              <app-card [card_data]="item"></app-card>
+          </div>
+      }      
+    </div>
+  </section>
+  

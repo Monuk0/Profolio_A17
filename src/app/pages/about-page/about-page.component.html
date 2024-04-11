@@ -1,1 +1,26 @@
-<p>about-page works!</p>
+<section>
+  <div class="txt--editor--area">
+    <ol>
+      @for(user of textArray; track user.id ){
+      <li>
+        <div class="text-zone">
+          <div class="line--count"  [style.width]="width_px+'px'">
+            <ol>
+              <li li>{{ user.id }}</li>
+            </ol>
+          </div>
+          <div class="text--area">
+            <input
+              class="text--field"
+              [value]="user.text"
+              (keypress)="line_Switch($event)"
+              autocomplete="off"
+              [id]="'txt--' + user.id"
+            />
+          </div>
+        </div>
+      </li>
+      }
+    </ol>
+  </div>
+</section>

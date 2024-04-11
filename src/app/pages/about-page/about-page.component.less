@@ -1,0 +1,66 @@
+section{
+    .txt--editor--area{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        height: 85vh;
+        overflow: scroll;
+        // color: red;
+        ol {
+            li {
+                list-style: none;
+            }
+        }
+        .text-zone{
+            display: flex;
+            width: 100%;
+            .line--count{
+                width: auto;
+                min-width: 10px;
+                height: 25px;
+                display: flex;
+                justify-content: space-around;
+                background:aqua; 
+                ol {
+                    li{
+                        color: var(--triadic);
+                        list-style: none;
+                    }
+                    // li::before {
+                    //     content: none; /* Insert content that looks like bullets */
+                    //     // padding-right: 8px;
+                    //     // color: blue; /* Or a color you prefer */
+                    // }
+                }
+            }
+    
+            .text--area{
+                width: 100%; /* Set width to 100% of parent div */
+                height: auto;
+               
+                .text--field{
+                    background: var(--background);
+                    width: 100%; /* Set width to 100% of parent div */
+                    height: 25px; /* Set height to 100% of parent div */
+                    box-sizing: border-box; /* Include padding and border in total width/height */
+                    resize: none; /* Prevent resizing of textarea */
+                    border: none; /* Optional: Remove border for visualization */
+                    outline: none; /* Optional: Remove outline */
+                    background-color: red ;
+                    color: var(--triadic);
+                    font-size: 18px;
+                    
+                    &:focus {
+                        // outline: none;
+                    }
+                }
+            }
+    
+        }
+        
+        
+        
+
+    }
+}

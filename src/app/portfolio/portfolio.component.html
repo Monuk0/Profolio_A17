@@ -11,6 +11,9 @@
           </div>
           }
           <div class="router-view">
+            @if(tab_select != '_hello'){
+                <app-task-bar></app-task-bar>
+            }
             <router-outlet />
           </div>
         </div>

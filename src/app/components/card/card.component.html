@@ -1,0 +1,14 @@
+<div class="card--div">
+  <div class="card--img">
+    <div class="lang--icon">
+        <img [src]="card_data.projectIn.icon" alt="">
+    </div>
+    <img [src]="card_data.img_url" />
+  </div>
+  <div class="card--content">
+    <div class="card--text" [innerHTML]="card_data.text_content"></div>
+    <div class="card--btn">
+      <button>view-project</button>
+    </div>
+  </div>
+</div>
